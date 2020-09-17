@@ -15,7 +15,7 @@ def encrypt(plaintext):
         
         index = cipher_alphabet.find(letter)
         
-        
+        ### implementing the encryption algorithm which is is E n(x)= (x+n)mod/length of the alphabet    
         index = (index+shift_key)%len(cipher_alphabet)
         
         
