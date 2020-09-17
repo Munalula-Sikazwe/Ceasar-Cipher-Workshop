@@ -18,7 +18,7 @@ def encrypt(plaintext):
         ### implementing the encryption algorithm which is is E n(x)= (x+n)mod/length of the alphabet    
         index = (index+shift_key)%len(cipher_alphabet)
         
-        
+        ### replace the letter in the plaintext with the cipher letter using the new shifted index
         cipher_text +=  cipher_alphabet[index] 
         
     return cipher_text
